@@ -26,3 +26,12 @@
 8、使用WinSCP软件连接路由器到 /root/ 目录下查看是否生成”log.txt“文件，里面有请求信息，如果出现此文件说明脚本正常运行。
 
 9、最后在 系统————>计划任务 下设置定时任务，如：*/1 * * * * /root/xyw.sh    //信息说明：每一分钟检测网络状态，如果网络异常则执行登录验证。
+
+
+#参考文章
+计划任务设置参考：https://blog.csdn.net/liubiggun/article/details/50781848?spm=1001.2014.3001.5506
+
+Dr.COM校园网认证参考：https://blog.csdn.net/csdn9228/article/details/103542395?spm=1001.2014.3001.5506
+
+断网检测参考：https://kzpu.com/archives/4023.html
+https://www.right.com.cn/forum/forum.php?mobile=2&mod=viewthread&page=1&tid=958200
