@@ -8,13 +8,13 @@ url="http://172.54.2.5/drcom/login?callback=dr1004&DDDDD=$user&upass=$pwd&0MKKey
 #网络状态检测
 ping -c 1 223.6.6.6 > /dev/null 2>&1
 if [ $? -eq 0 ];then
-    read -p "Internet OK"
+    echo "Internet OK"
 else
     wget $url -O log.txt
     sleep 10
     ping -c 1 223.6.6.6.6 > /dev/null 2>&1
     if [ $? -eq 0 ];then
-        read -p "Internet OK"
+        echo "Internet OK"
     else
         wget $url -O log.txt
     fi
